@@ -10,8 +10,8 @@ resource "aws_alb" "application_load_balancer" {
   security_groups    = [aws_security_group.load_balancer_security_group.id]
 
   tags = {
-    Name        = "${var.app_name}-alb"
-    Environment = var.app_environment
+    Name        = "RenewableCarbon-alb"
+    Environment = "Prod"
   }
 }
 # security groups for ALB

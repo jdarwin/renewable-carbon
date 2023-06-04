@@ -8,7 +8,7 @@ resource "aws_db_instance" "mysql" {
     engine                    = "mysql"
     engine_version            = "5.7"
     instance_class            = "db.t2.micro"
-    name                      = "worker_db"
+    db_name                      = "worker_db"
     username                  = "worker"
     password                  = "worker"
     port                      = "3306"
