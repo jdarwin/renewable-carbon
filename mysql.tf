@@ -7,7 +7,7 @@ resource "aws_db_instance" "mysql" {
     multi_az                  = true
     engine                    = "mysql"
     engine_version            = "5.7"
-    instance_class            = "db.t3.micro"
+    instance_class            = "db.t3.large"
     db_name                      = "worker_db"
     username                  = "worker"
     password                  = "worker"
