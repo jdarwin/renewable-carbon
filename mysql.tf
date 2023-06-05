@@ -1,6 +1,6 @@
 resource "aws_db_instance" "mysql" {
     identifier                = "mysql"
-    allocated_storage         = 10
+    allocated_storage         = 100
     backup_retention_period   = 2
     backup_window             = "01:00-01:30"
     maintenance_window        = "sun:03:00-sun:03:30"
