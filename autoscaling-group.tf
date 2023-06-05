@@ -18,7 +18,7 @@ resource "aws_autoscaling_group" "failure_analysis_ecs_asg" {
     health_check_type         = "EC2"
 }
 resource "aws_appautoscaling_target" "ecs_target" {
-  max_capacity       = 2
+  max_capacity       = 6
   min_capacity       = 1
   #resource_id        = "service/${aws_ecs_cluster.aws-ecs-cluster.name}/${aws_ecs_service.aws-ecs-service.name}"
   resource_id        = "service/RenewableCarbon-ecs-cluster/worker"
